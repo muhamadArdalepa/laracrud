@@ -1,4 +1,6 @@
 @extends('base')
+@include('navbar')
+
 @section('main')
 
 <div class="row">

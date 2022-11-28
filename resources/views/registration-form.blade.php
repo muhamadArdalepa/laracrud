@@ -1,8 +1,9 @@
 @extends('base')
+@include('navbar')
 @section('main')
 
 <div class="row">
-    <div class="col-md-8 col-xl-6">
+    <div class="col-md-8 col-xl-6 mx-auto">
         <h1>Student Registration</h1>
         <hr>
         <form action="{{ route('students.store') }}" method="POST" autocomplete="on">

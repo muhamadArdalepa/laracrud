@@ -26,7 +26,7 @@ class StudentController extends Controller
         $student = $student->when(request('sort') ?? false, function ($student) {
             return $student->orderBy(request('sort'), request('sc'));
         });
-        return view('index', ['students' => $student->paginate(7)->withQueryString(), 'row' => $student->count()]);
+        return view('student', ['students' => $student->paginate(7)->withQueryString(), 'row' => $student->count()]);
     }
     public function create()
     {

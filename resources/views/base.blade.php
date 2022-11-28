@@ -10,13 +10,10 @@
 </head>
 
 <body>
-    @auth
-    @include('navbar')
-    @endauth
-    <div class="container bg-white">
+    <div class="container pt-5">
         @yield('main')
     </div>
-    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
